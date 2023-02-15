@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.heading {
+  font-family: inherit;
+  user-select: none;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  filter: opacity(.8);
+  backdrop-filter: blur(10px);
+  height: 50px;
+}
+
+.heading h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 24px;
+}
+
+html::after {
+  background: url("https://wallpapers.com/images/file/alphabet-and-google-ceo-sundar-pichai-6zumwocpxk6igpxi.jpg") no-repeat center fixed;
+  content: "";
+  position: fixed;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  z-index: -1;
+  filter: blur(0,4px);
+}
+/* body{
+    position: fixed;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    z-index: -1;
+    filter: blur(0,4px);}
+#bg {
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* top: 0;
+    left: 0; */
+    /* width: 100%;
+    height: 100%;
+    z-index: -1; */
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2px;
+
+}
+
+.dataForOne {
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+.lableForData {
+  width: 100%;
+  background-color: rgba(134, 154, 221, 0.5);
+  text-align: center;
+  font-weight: 700;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 5px 0;
+  text-shadow: 2px 2px 2px rgba(226, 126, 126, 0.5);
+}
+
+.paraForData {
+  max-width: 90%;
+  word-wrap: break-word;
+  line-height: 30px;
+}
+
+.btn-show {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  margin-top: 1rem;
+}
+
+#btn,
+.btn {
+  height: 50px;
+  font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  background-color: rgb(83, 88, 83);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.btn {
+  background-color: rgb(95, 80, 80);
+  filter: opacity(.8);
+}
+
+#selection-box {
+  margin-top: .8rem;
+  display: flex;
+  flex-direction: row;
+  gap: .7rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.options {
+  /* appearance: none; */
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgb(83, 88, 83);
+  color: rgb(235, 226, 226);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.data {
+  display: flex;
+  flex-direction: row;
+  gap: .7rem;
+  place-content: center;
+  margin-top: .8rem;
+  height: 50px;
+}
+
+.file-input {
+  filter: blur(.2px);
+  display: inline-block;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+input[type="file"] {
+  font-weight: 800;
+}
+
+input::file-selector-button {
+  width: 200px;
+  height: 30px;
+  font-family: inherit;
+  font-weight: 700;
+  background-color: rgb(194, 194, 194);
+  filter: opacity(.8);
+}
+
+
+.hidden {
+  display: none;
+}
+
+table {
+  background-color: rgb(0, 0, 0, 0.6);
+  width: 100%;
+  border: 1px solid black;
+}
+
+table td {
+  border: 1px solid black;
+}
+
+table tr td {
+  user-select: none;
+  width: 200px;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+table tr td:hover {
+  cursor: pointer;
+}
