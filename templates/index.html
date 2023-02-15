@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSV Comparing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}" />
+  </head>
+
+  <body>
+    <main>
+      <h1 class="heading">Long Tail Data</h1>
+      <form action = "/" method="POST" enctype="multipart/form-data">
+      <div id="selection-box">
+        <select name="region" id="select" class="options" title="choose a region">
+          <option disabled selected value="null">Region</option>
+          <option value="CPW-uk">CPW UK</option>
+          <option value="voda-uk">Vodafone UK</option>
+          <option value="ee-uk">EE UK</option>
+          <option value="o2-uk">O2 UK</option>
+          <option value="currys-uk">Currys UK</option>
+        </select>
+        <span>
+          <button id="btn" title="Submit">Submit</button>
+        </span>
+      </div>
+      <div class="data hidden">
+        <input
+          name="first-file"
+          type="file"
+          class="file-input"
+          id="first-file"
+          title="Provide a file"
+        />
+        <input
+          name="second-file"
+          type="file"
+          class="file-input"
+          id="second-file"
+          title="Provide a file"
+        />
+      </div>
+        </form>
+      <div class="btn-show">
+        <!-- 
+          this button will be shown when the data is fetched from the flask
+         -->
+      </div>
+      <div class="dataFromFlask" id="dataToShow">
+        <!-- 
+          all the data will be shown here
+         -->
+
+      </div>
+    </main>
+    <script src="{{ url_for('static', filename='styles/script.js') }}"></script>
+  </body>
+</html>
